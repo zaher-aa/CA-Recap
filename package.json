@@ -1,0 +1,25 @@
+{
+  "name": "ca-recap",
+  "version": "1.0.0",
+  "description": "Recap the first 8 weeks of the CA program",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest testing/index.test.js --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zaher-aa/CA-Recap.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zaher-aa/CA-Recap/issues"
+  },
+  "homepage": "https://github.com/zaher-aa/CA-Recap#readme",
+  "devDependencies": {
+    "eslint": "^8.11.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.25.4",
+    "jest": "^27.5.1"
+  }
+}

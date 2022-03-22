@@ -1,32 +1,32 @@
-// // 1
-// const getUsernameFromDatabase = (email, callback) => {
-//   const database = db.get('data');
-//   const user = database.find((user) => user.email === email);
-//   const username = user ? user.username : null;
-//   if (!username) {
-//     callback(new Error('No user found'));
-//   }
-//   callback(null, username);
-// };
+// 1
+const getUsernameFromDatabase = (email, callback) => {
+  const database = db.get('data');
+  const user = database.find((user) => user.email === email);
+  const username = user ? user.username : null;
+  if (!username) {
+    callback(new Error('No user found'));
+  }
+  callback(null, username);
+};
 
-// getUsernameFromDatabase('zaher@gmail.com', (err, username) => {
-//   if (err) {
-//     console.log('Sorry there was a problem');
-//   } else {
-//     console.log(`Marhaba ${username}`);
-//   }
-// });
+getUsernameFromDatabase('zaher@gmail.com', (err, username) => {
+  if (err) {
+    console.log('Sorry there was a problem');
+  } else {
+    console.log(`Marhaba ${username}`);
+  }
+});
 
-// // 2
-// const addUser = (data, cb) => {
-//   db_connection.query('INSERT INTO users (name, email,password) VALUES ($1, $2, $3)', [name, email, password], (error) => {
-//     if (error) {
-//       cb(new Error('Failed to add user'));
-//     } else {
-//       cb(null, true);
-//     }
-//   });
-// };
+// 2
+const addUser = (data, cb) => {
+  db_connection.query('INSERT INTO users (name, email,password) VALUES ($1, $2, $3)', [name, email, password], (error) => {
+    if (error) {
+      cb(new Error('Failed to add user'));
+    } else {
+      cb(null, true);
+    }
+  });
+};
 
 // 3
 function parallel(tasks, callback) {
